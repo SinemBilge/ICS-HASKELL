@@ -1,9 +1,0 @@
-
-Problem 3.5: list comprehensions (haskell)
-(1+1 = 2 points)
-Your list comprehensions should be correct, they do not have to be efficient. You are not getting points for a list comprehension simply returning a hard coded solution list. In other words, your list comprehensions should continue to function correctly if parameters are changed.
-a) Write a list comprehension that returns all positive factors of the number 210. Try to write the list comprehension in such a way that 210 can easily be replaced by a different number.
-b) Write a list comprehension that returns a list of Pythagorean triads (a, b, c), where a, b, c are positive integers in the range 1..100 and the Pythagorean triad is defined as a2 + b2 = c2. The list should not contain any “duplicates” where a and b are swapped. If the list contains (3, 4, 5) (since 32 + 42 = 25 = 52 ), then is should not also include (4, 3, 5).
-
-a)[x | n <- [210], x <- [1..n], n `mod` x == 0]
-b)[(a,b,c) | a <- [1..100], b <- [a..100], c <- [b..100], c^2 == a^2 + b^2]
